@@ -9,7 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/style.css">
-    <title>Orders</title>
+    <title>Orders Completed</title>
+    <!-- <title>Orders Completed</title> -->
 </head>
 
 <body class="bg-[#FAFAFA] w-[1440px] mx-auto">
@@ -35,11 +36,11 @@
                             <div class="text-black text-sm font-normal font-['Inter'] leading-[21px]">Hóa đơn cần xử lý
                             </div>
                         </div>
-                        <div
-                            class="self-stretch px-4 py-2 hover:bg-zinc-100 rounded justify-start items-center gap-2.5 inline-flex">
+                        <button
+                            class="self-stretch px-4 py-2 hover:bg-zinc-100 bg-white focus:bg-zinc-100 rounded justify-start items-center gap-2.5 inline-flex">
                             <div class="text-zinc-800 text-sm font-normal font-['Inter'] leading-[21px]">Hóa đơn hoàn
                                 thành</div>
-                        </div>
+                        </button>
                         <div
                             class="self-stretch px-4 py-2 hover:bg-zinc-100 rounded justify-start items-center gap-2.5 inline-flex">
                             <div class="text-zinc-800 text-sm font-normal font-['Inter'] leading-[21px]">Hóa đơn bị hủy
@@ -95,7 +96,7 @@
     <div class="flex justify-center pt-5 pb-10 px-6">
         <div class="inline-flex flex-col gap-5">
             <div
-                class="px-4 py-2 w-[192px] h-[37px] bg-white rounded-lg border border-zinc-200 justify-start items-center gap-2.5 inline-flex">
+                class="px-4 py-2 w-[207px] h-[37px] bg-white rounded-lg border border-zinc-200 justify-start items-center gap-2.5 inline-flex">
                 <div class="w-3.5 h-[12.44px] relative">
                     <svg xmlns="http://www.w3.org/2000/svg" width="14" height="13" viewBox="0 0 14 13" fill="none">
                         <g clip-path="url(#clip0_8180_5184)">
@@ -112,7 +113,7 @@
                 </div>
 
                 <p class="text-zinc-700 text-sm">/</p>
-                <p class="text-zinc-700 text-sm">Hóa đơn cần xử lý</p>
+                <p class="text-zinc-700 text-sm">Hóa đơn hoàn thành</p>
             </div>
             <div
                 class="inline-flex justify-center items-center gap-5 w-[1156px] bg-white border border-zinc-200 rounded-xl">
@@ -125,13 +126,22 @@
                                     src="../assets/icon/layer-group-white.svg" alt="">
                             </div>
                             <div class="text-blue-400 text-sm font-bold font-['Inter'] leading-[21px]">Tìm kiếm & lọc
-                                hóa
-                                đơn</div>
+                                hóa đơn hoàn thành</div>
                         </div>
                     </div>
                     <form action="">
-                        <div class="self-stretch px-5 py-3 justify-start items-center gap-6 inline-flex">
+                        <div
+                            class="self-stretch px-5 py-3 justify-start items-center gap-6 inline-flex border-b border-zinc-100">
                             <div class="flex flex-col gap-6">
+                                <div class="grow shrink basis-0 h-[29px] justify-start items-center gap-2.5 flex">
+                                    <label
+                                        class="w-[130px] text-zinc-800 text-sm font-medium font-['Inter'] leading-[21px]"
+                                        for="date">Từ Ngày:
+                                    </label>
+                                    <input
+                                        class="w-[406px] text-sm bg-neutral-50 p-1 border-b border-zinc-300 text-zinc-500"
+                                        type="date" name="name" id="date" placeholder="Tên khách hàng">
+                                </div>
                                 <div class="grow shrink basis-0 h-[29px] justify-start items-center gap-2.5 flex">
                                     <label
                                         class="w-[130px] text-zinc-800 text-sm font-medium font-['Inter'] leading-[21px]"
@@ -140,55 +150,6 @@
                                     <input
                                         class="w-[406px] text-sm bg-neutral-50 p-1 border-b border-zinc-300 placeholder-zinc-500"
                                         type="text" name="name" id="name" placeholder="Tên khách hàng">
-                                </div>
-                                <div class="grow shrink basis-0 h-[29px] justify-start items-center gap-2.5 flex">
-                                    <label
-                                        class="w-[130px] text-zinc-800 text-sm font-medium font-['Inter'] leading-[21px]"
-                                        for="nameadd">Người tạo hóa đơn:
-                                    </label>
-                                    <input
-                                        class="w-[406px] text-sm bg-neutral-50 p-1 border-b border-zinc-300 placeholder-zinc-500"
-                                        type="text" name="name" id="nameadd" placeholder="Tên người tạo hóa đơn">
-                                </div>
-                                <div class="grow shrink basis-0 h-[29px] justify-start items-center gap-2.5 flex">
-                                    <label
-                                        class="w-[130px] text-zinc-800 text-sm font-medium font-['Inter'] leading-[21px]"
-                                        for="date">Ngày tạo hóa đơn:
-                                    </label>
-                                    <input
-                                        class="w-[406px] text-sm bg-neutral-50 p-1 border-b border-zinc-300 text-zinc-500"
-                                        type="date" name="name" id="date" placeholder="Tên khách hàng">
-                                </div>
-                            </div>
-                            <div class="flex flex-col gap-6">
-                                <div class="grow shrink basis-0 h-[29px] justify-start items-center gap-2.5 flex">
-                                    <label
-                                        class="w-[130px] text-zinc-800 text-sm font-medium font-['Inter'] leading-[21px]"
-                                        for="phone">Điện thoại:
-                                    </label>
-                                    <input
-                                        class="w-[406px] text-sm bg-neutral-50 p-1 border-b border-zinc-300 placeholder-zinc-500"
-                                        type="text" name="name" id="phone" placeholder="Số điện thoại khách hàng">
-                                </div>
-                                <div class="grow shrink basis-0 h-[29px] justify-start items-center gap-2.5 flex">
-                                    <label
-                                        class="w-[130px] text-zinc-800 text-sm font-medium font-['Inter'] leading-[21px]"
-                                        for="name">Vật liệu:
-                                    </label>
-                                    <div class="flex gap-5 text-zinc-500 text-sm leading-[21px]">
-                                        <div class="flex gap-1 items-center">
-                                            <input class="w-4 h-4 checked:bg-[#60A5FA]" type="radio" name="material">
-                                            <p>UV</p>
-                                        </div>
-                                        <div class="flex gap-1 items-center">
-                                            <input class="w-4 h-4" type="radio" name="material">
-                                            <p>PDF</p>
-                                        </div>
-                                        <div class="flex gap-1 items-center">
-                                            <input class="w-4 h-4" type="radio" name="material">
-                                            <p>Cán bóng</p>
-                                        </div>
-                                    </div>
                                 </div>
                                 <div class="grow shrink basis-0 h-[29px] justify-start items-center gap-2.5 flex">
                                     <label
@@ -203,6 +164,43 @@
                                         <div class="flex gap-1 items-center">
                                             <input class="w-4 h-4" type="radio" name="status" id="">
                                             <p>Đã hoàn thành</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="flex flex-col gap-6">
+                                <div class="grow shrink basis-0 h-[29px] justify-start items-center gap-2.5 flex">
+                                    <label
+                                        class="w-[130px] text-zinc-800 text-sm font-medium font-['Inter'] leading-[21px]"
+                                        for="date">Từ Ngày:
+                                    </label>
+                                    <input
+                                        class="w-[406px] text-sm bg-neutral-50 p-1 border-b border-zinc-300 text-zinc-500"
+                                        type="date" name="name" id="date" placeholder="Tên khách hàng">
+                                </div>
+                                <div class="grow shrink basis-0 h-[29px] justify-start items-center gap-2.5 flex">
+                                    <label
+                                        class="w-[130px] text-zinc-800 text-sm font-medium font-['Inter'] leading-[21px]"
+                                        for="phone">Số điện thoại:
+                                    </label>
+                                    <input
+                                        class="w-[406px] text-sm bg-neutral-50 p-1 border-b border-zinc-300 placeholder-zinc-500"
+                                        type="text" name="name" id="phone" placeholder="Số điện thoại khách hàng">
+                                </div>
+                                <div class="grow shrink basis-0 h-[29px] justify-start items-center gap-2.5 flex">
+                                    <label
+                                        class="w-[130px] text-zinc-800 text-sm font-medium font-['Inter'] leading-[21px]"
+                                        for="name">Giao Hàng:
+                                    </label>
+                                    <div class="flex gap-5 text-zinc-500 text-sm leading-[21px]">
+                                        <div class="flex gap-1 items-center">
+                                            <input class="w-4 h-4" type="radio" name="delivery" id="">
+                                            <p>Đã giao</p>
+                                        </div>
+                                        <div class="flex gap-1 items-center">
+                                            <input class="w-4 h-4" type="radio" name="delivery" id="">
+                                            <p>Chưa giao</p>
                                         </div>
                                     </div>
                                 </div>
@@ -232,31 +230,64 @@
                             <img class="w-2.5 h-[11.43px] relative flex-col justify-start items-start flex"
                                 src="../assets/icon/ballot-check 1.svg" alt="">
                         </div>
-                        <div class="text-blue-500 text-sm font-bold leading-[21px]">Hóa đơn</div>
+                        <div class="text-blue-500 text-sm font-bold leading-[21px]">Hóa đơn hoàn thành</div>
                     </div>
-                    <div class="px-4 py-2 bg-zinc-700 rounded justify-start items-center gap-2 flex">
-                        <button class="text-center text-white text-xs font-normal font-['Inter'] leading-[18px]">
-                            Thêm hóa đơn
+                    <!-- px-4 py-2 bg-zinc-700 rounded justify-start items-center gap-2 flex -->
+                    <div class="inline-flex gap-2.5">
+                        <button
+                            class="w-[150px] h-[34px] px-4 py-2  bg-green-600 flex gap-2 items-center justify-center rounded">
+                            <div class="w-4 h-[12.80px] flex justify-center items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14"
+                                    fill="none">
+                                    <g clip-path="url(#clip0_8284_2909)">
+                                        <path
+                                            d="M6.4 10.9996C6.4 12.3246 5.325 13.3996 4 13.3996C2.6525 13.3996 1.6 12.3246 1.6 10.9996C0.71625 10.9996 0 10.2821 0 9.39961V2.19961C0 1.31586 0.71625 0.599609 1.6 0.599609H8.8C9.6825 0.599609 10.4 1.31586 10.4 2.19961V2.99961H11.4675C11.84 2.99961 12.195 3.14711 12.4575 3.40961L14.79 5.74211C15.0525 6.00461 15.2 6.35961 15.2 6.73211V9.79961H15.4C15.7325 9.79961 16 10.0671 16 10.3996C16 10.7321 15.7325 10.9996 15.4 10.9996H14.4C14.4 12.3246 13.325 13.3996 12 13.3996C10.6525 13.3996 9.6 12.3246 9.6 10.9996H6.4ZM8.8 1.79961H1.6C1.379 1.79961 1.2 1.97861 1.2 2.19961V9.39961C1.2 9.61961 1.379 9.79961 1.6 9.79961H1.921C2.336 9.08211 3.1125 8.59961 4 8.59961C4.8875 8.59961 5.665 9.08211 6.08 9.79961H8.8C9.02 9.79961 9.2 9.61961 9.2 9.39961V2.19961C9.2 1.97861 9.02 1.79961 8.8 1.79961ZM11.61 4.25711C11.5725 4.21961 11.5225 4.19961 11.4675 4.19961H10.4V6.59961H13.95C13.9475 6.59711 13.945 6.59211 13.9425 6.58961L11.61 4.25711ZM4 9.79961C3.3375 9.79961 2.8 10.3371 2.8 10.9996C2.8 11.6621 3.3375 12.1996 4 12.1996C4.6625 12.1996 5.2 11.6621 5.2 10.9996C5.2 10.3371 4.6625 9.79961 4 9.79961ZM12 12.1996C12.6625 12.1996 13.2 11.6621 13.2 10.9996C13.2 10.3371 12.6625 9.79961 12 9.79961C11.3375 9.79961 10.8 10.3371 10.8 10.9996C10.8 11.6621 11.3375 12.1996 12 12.1996Z"
+                                            fill="#FAFAFA" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_8284_2909">
+                                            <rect width="16" height="12.8" fill="white"
+                                                transform="translate(0 0.599609)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <div class="text-center text-neutral-50 text-xs font-normal leading-[18px]">
+                                Đã giao hàng (2)</div>
+                        </button>
+                        <button
+                            class="w-[116px] h-[34px] px-4 py-2 bg-zinc-700 flex gap-2 items-center justify-center rounded">
+                            <div class="w-4 h-4">
+                                <img src="../assets/img/xlsx.png" alt="">
+                            </div>
+                            <div class="text-center text-neutral-50 text-xs font-normal leading-[18px]">
+                                Xuất Excel</div>
                         </button>
                     </div>
                 </div>
                 <div class="">
                     <table class="text-left w-[1156px]">
                         <thead class="text-xs px-5 bg-neutral-50">
-                            <tr class="pt-12 h-[42px] border-b border-zinc-100">
-                                <th scope="col" class="w-5 pr-6 pl-5 font-medium">#</th>
+                            <tr class="py-3 h-[42px] border-b border-zinc-100">
+                                <th scope="col" class="w-5 pr-6 pl-5 pt-[4.5px] font-medium">
+                                    <input class="w-4 h-4" type="checkbox" name="check" id="">
+                                </th>
+                                <th scope="col" class="w-5 pr-6 pr-6 font-medium">#</th>
                                 <th scope="col" class="w-[89px] pr-6 font-medium">Số hóa đơn</th>
                                 <th scope="col" class="w-[180px] pr-6 font-medium">Khách hàng</th>
                                 <th scope="col" class="w-[100px] pr-6 font-medium">Số ĐT</th>
-                                <th scope="col" class="w-[130px] pr-6 font-medium">Thời gian lấy hàng</th>
+                                <th scope="col" class="w-[130px] pr-6 font-medium">Chất liệu in</th>
                                 <th scope="col" class="w-[100px] pr-6 font-medium">Tổng tiền</th>
-                                <th scope="col" class="w-[140px] pr-6 font-medium">Trạng thái thanh toán</th>
-                                <th scope="col" class="w-[120px] pr-6 font-medium">Trạng thái duyệt</th>
+                                <th scope="col" class="w-[140px] pr-6 font-medium">Trạng thái</th>
+                                <th scope="col" class="w-[120px] pr-6 font-medium">Giao Hàng</th>
                                 <th scope="col" class="w-[76px] pr-5 font-medium">Thao tác</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr class="py-3 px-5 h-[47px] border-b border-zinc-100 hover:bg-neutral-50">
+                                <td class="pt-[4.5px]">
+                                    <input class="w-4 h-4" type="checkbox" name="check" id="">
+                                </td>
                                 <td class="">
                                     <p class="text-zinc-800 text-xs font-normal">1</p>
                                 </td>
@@ -281,17 +312,16 @@
                                 <td>
                                     <div class="flex gap-2">
                                         <div
-                                            class="w-[71px] h-[26px] px-2 py-1 bg-neutral-50 rounded-lg justify-start items-center gap-2.5 inline-flex">
+                                            class="w-[34px] h-[26px] px-2 py-1 bg-neutral-50 rounded-lg justify-start items-center gap-2.5 inline-flex">
                                             <div class="text-zinc-500 text-xs font-normal leading-[18px]">
-                                                19/02/2024</div>
+                                                UV</div>
                                         </div>
                                         <div
-                                            class="w-[42px] h-[26px] px-2 py-1 bg-neutral-50 rounded-lg justify-start items-center gap-2.5 inline-flex">
+                                            class="w-[39px] h-[26px] px-2 py-1 bg-neutral-50 rounded-lg justify-start items-center gap-2.5 inline-flex">
                                             <div class="text-zinc-500 text-xs font-normal leading-[18px]">
-                                                15:25</div>
+                                                PPF</div>
                                         </div>
                                     </div>
-
                                 </td>
                                 <td>
                                     <div
@@ -312,11 +342,11 @@
                                     <div
                                         class=" h-[26px] px-2 py-1 bg-orange-50 rounded-lg justify-start items-center gap-2.5 inline-flex">
                                         <div class="text-orange-500 text-xs font-normal font-['Inter'] leading-[18px]">
-                                            Chờ duyệt</div>
+                                            Chưa giao</div>
                                     </div>
                                 </td>
                                 <td>
-                                    <div class="flex gap-2.5">
+                                    <div class="">
                                         <div
                                             class="w-[31.75px] h-[22px] px-2 py-1 bg-neutral-50 hover:bg-blue-50 rounded-lg justify-start items-center gap-2.5 inline-flex eye_btn">
                                             <button class="w-[15.75px] h-3.5 relative">
@@ -337,30 +367,13 @@
                                             </button>
 
                                         </div>
-                                        <div
-                                            class="w-[30px] h-[22px] px-2 py-1 bg-neutral-50 hover:bg-blue-50 rounded-lg justify-start items-center gap-2.5 inline-flex detail_btn">
-                                            <button class="w-3.5 h-3.5 relative">
-                                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <g id="pen-to-square 1" clip-path="url(#clip0_8206_7003)">
-                                                        <path id="Vector"
-                                                            d="M10.952 1.18282C11.7203 0.413995 12.9672 0.413995 13.7355 1.18282L14.0664 1.51423C14.8348 2.28313 14.8348 3.52973 14.0664 4.29809L8.67422 9.69301C8.43633 9.92817 8.14375 10.1004 7.82109 10.1934L5.08672 10.9754C4.85703 11.0411 4.61094 10.9754 4.44141 10.784C4.27461 10.6391 4.20898 10.393 4.27461 10.1633L5.05664 7.42895C5.14961 7.1063 5.32188 6.81372 5.55703 6.57583L10.952 1.18282ZM12.784 2.11087C12.5516 1.85466 12.1359 1.85466 11.8789 2.11087L11.0832 2.9063L12.3438 4.16684L13.1395 3.34653C13.3965 3.11411 13.3965 2.69848 13.1395 2.44227L12.784 2.11087ZM6.31992 7.78989L5.86055 9.3895L7.46016 8.93012C7.56953 8.90005 7.66523 8.84262 7.74453 8.76333L11.4168 5.0938L10.1562 3.83325L6.48672 7.50552C6.40742 7.58481 6.35 7.68051 6.31992 7.78989ZM6.21875 2.25005C6.58242 2.25005 6.875 2.54399 6.875 2.9063C6.875 3.26997 6.58242 3.56255 6.21875 3.56255H3.15625C2.55223 3.56255 2.0625 4.052 2.0625 4.6563V12.0938C2.0625 12.6981 2.55223 13.1875 3.15625 13.1875H10.5938C11.198 13.1875 11.6875 12.6981 11.6875 12.0938V9.0313C11.6875 8.66762 11.9801 8.37505 12.3438 8.37505C12.7074 8.37505 13 8.66762 13 9.0313V12.0938C13 13.4227 11.9227 14.5 10.5938 14.5H3.15625C1.82734 14.5 0.75 13.4227 0.75 12.0938V4.6563C0.75 3.32739 1.82734 2.25005 3.15625 2.25005H6.21875Z"
-                                                            fill="currentColor" />
-                                                    </g>
-                                                    <defs>
-                                                        <clipPath id="clip0_8206_7003">
-                                                            <rect width="14" height="14" fill="white"
-                                                                transform="translate(0.75 0.5)" />
-                                                        </clipPath>
-                                                    </defs>
-                                                </svg>
-
-                                            </button>
-                                        </div>
                                     </div>
                                 </td>
                             </tr>
                             <tr class="py-3 px-5 h-[47px] border-b border-zinc-100 hover:bg-neutral-50">
+                                <td class="pt-[4.5px]">
+                                    <input class="w-4 h-4" type="checkbox" name="check" id="">
+                                </td>
                                 <td class="">
                                     <p class="text-zinc-800 text-xs font-normal">2</p>
                                 </td>
@@ -385,17 +398,16 @@
                                 <td>
                                     <div class="flex gap-2">
                                         <div
-                                            class="w-[71px] h-[26px] px-2 py-1 bg-neutral-50 rounded-lg justify-start items-center gap-2.5 inline-flex">
+                                            class="w-[34px] h-[26px] px-2 py-1 bg-neutral-50 rounded-lg justify-start items-center gap-2.5 inline-flex">
                                             <div class="text-zinc-500 text-xs font-normal leading-[18px]">
-                                                19/02/2024</div>
+                                                UV</div>
                                         </div>
                                         <div
-                                            class="w-[42px] h-[26px] px-2 py-1 bg-neutral-50 rounded-lg justify-start items-center gap-2.5 inline-flex">
+                                            class="w-[39px] h-[26px] px-2 py-1 bg-neutral-50 rounded-lg justify-start items-center gap-2.5 inline-flex">
                                             <div class="text-zinc-500 text-xs font-normal leading-[18px]">
-                                                15:25</div>
+                                                PPF</div>
                                         </div>
                                     </div>
-
                                 </td>
                                 <td>
                                     <div
@@ -414,13 +426,13 @@
                                 </td>
                                 <td>
                                     <div
-                                        class=" h-[26px] px-2 py-1 bg-green-50 rounded-lg justify-start items-center gap-2.5 inline-flex">
-                                        <div class="text-green-500 text-xs font-normal font-['Inter'] leading-[18px]">
-                                            Đã duyệt</div>
+                                        class=" h-[26px] px-2 py-1 bg-orange-50 rounded-lg justify-start items-center gap-2.5 inline-flex">
+                                        <div class="text-orange-500 text-xs font-normal font-['Inter'] leading-[18px]">
+                                            Chưa giao</div>
                                     </div>
                                 </td>
                                 <td>
-                                    <div class="flex gap-2.5">
+                                    <div>
                                         <div
                                             class="w-[31.75px] h-[22px] px-2 py-1 bg-neutral-50 hover:bg-blue-50 rounded-lg justify-start items-center gap-2.5 inline-flex eye_btn">
                                             <button class="w-[15.75px] h-3.5 relative">
@@ -439,34 +451,16 @@
                                                     </defs>
                                                 </svg>
                                             </button>
-
-                                        </div>
-                                        <div
-                                            class="w-[30px] h-[22px] px-2 py-1 bg-neutral-50 hover:bg-blue-50 rounded-lg justify-start items-center gap-2.5 inline-flex detail_btn">
-                                            <button class="w-3.5 h-3.5 relative">
-                                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <g id="pen-to-square 1" clip-path="url(#clip0_8206_7003)">
-                                                        <path id="Vector"
-                                                            d="M10.952 1.18282C11.7203 0.413995 12.9672 0.413995 13.7355 1.18282L14.0664 1.51423C14.8348 2.28313 14.8348 3.52973 14.0664 4.29809L8.67422 9.69301C8.43633 9.92817 8.14375 10.1004 7.82109 10.1934L5.08672 10.9754C4.85703 11.0411 4.61094 10.9754 4.44141 10.784C4.27461 10.6391 4.20898 10.393 4.27461 10.1633L5.05664 7.42895C5.14961 7.1063 5.32188 6.81372 5.55703 6.57583L10.952 1.18282ZM12.784 2.11087C12.5516 1.85466 12.1359 1.85466 11.8789 2.11087L11.0832 2.9063L12.3438 4.16684L13.1395 3.34653C13.3965 3.11411 13.3965 2.69848 13.1395 2.44227L12.784 2.11087ZM6.31992 7.78989L5.86055 9.3895L7.46016 8.93012C7.56953 8.90005 7.66523 8.84262 7.74453 8.76333L11.4168 5.0938L10.1562 3.83325L6.48672 7.50552C6.40742 7.58481 6.35 7.68051 6.31992 7.78989ZM6.21875 2.25005C6.58242 2.25005 6.875 2.54399 6.875 2.9063C6.875 3.26997 6.58242 3.56255 6.21875 3.56255H3.15625C2.55223 3.56255 2.0625 4.052 2.0625 4.6563V12.0938C2.0625 12.6981 2.55223 13.1875 3.15625 13.1875H10.5938C11.198 13.1875 11.6875 12.6981 11.6875 12.0938V9.0313C11.6875 8.66762 11.9801 8.37505 12.3438 8.37505C12.7074 8.37505 13 8.66762 13 9.0313V12.0938C13 13.4227 11.9227 14.5 10.5938 14.5H3.15625C1.82734 14.5 0.75 13.4227 0.75 12.0938V4.6563C0.75 3.32739 1.82734 2.25005 3.15625 2.25005H6.21875Z"
-                                                            fill="currentColor" />
-                                                    </g>
-                                                    <defs>
-                                                        <clipPath id="clip0_8206_7003">
-                                                            <rect width="14" height="14" fill="white"
-                                                                transform="translate(0.75 0.5)" />
-                                                        </clipPath>
-                                                    </defs>
-                                                </svg>
-
-                                            </button>
                                         </div>
                                     </div>
                                 </td>
                             </tr>
                             <tr class="py-3 px-5 h-[47px] border-b border-zinc-100 hover:bg-neutral-50">
+                                <td class="pt-[4.5px]">
+                                    <input class="w-4 h-4" type="checkbox" name="check" id="">
+                                </td>
                                 <td class="">
-                                    <p class="text-zinc-800 text-xs font-normal">3</p>
+                                    <p class="text-zinc-800 text-xs font-normal">1</p>
                                 </td>
                                 <td>
                                     <p class="text-zinc-800 text-xs font-normal">45321</p>
@@ -489,17 +483,16 @@
                                 <td>
                                     <div class="flex gap-2">
                                         <div
-                                            class="w-[71px] h-[26px] px-2 py-1 bg-neutral-50 rounded-lg justify-start items-center gap-2.5 inline-flex">
+                                            class="w-[34px] h-[26px] px-2 py-1 bg-neutral-50 rounded-lg justify-start items-center gap-2.5 inline-flex">
                                             <div class="text-zinc-500 text-xs font-normal leading-[18px]">
-                                                19/02/2024</div>
+                                                UV</div>
                                         </div>
                                         <div
-                                            class="w-[42px] h-[26px] px-2 py-1 bg-neutral-50 rounded-lg justify-start items-center gap-2.5 inline-flex">
+                                            class="w-[39px] h-[26px] px-2 py-1 bg-neutral-50 rounded-lg justify-start items-center gap-2.5 inline-flex">
                                             <div class="text-zinc-500 text-xs font-normal leading-[18px]">
-                                                15:25</div>
+                                                PPF</div>
                                         </div>
                                     </div>
-
                                 </td>
                                 <td>
                                     <div
@@ -520,11 +513,11 @@
                                     <div
                                         class=" h-[26px] px-2 py-1 bg-orange-50 rounded-lg justify-start items-center gap-2.5 inline-flex">
                                         <div class="text-orange-500 text-xs font-normal font-['Inter'] leading-[18px]">
-                                            Chờ duyệt</div>
+                                            Chưa giao</div>
                                     </div>
                                 </td>
                                 <td>
-                                    <div class="flex gap-2.5">
+                                    <div class="">
                                         <div
                                             class="w-[31.75px] h-[22px] px-2 py-1 bg-neutral-50 hover:bg-blue-50 rounded-lg justify-start items-center gap-2.5 inline-flex eye_btn">
                                             <button class="w-[15.75px] h-3.5 relative">
@@ -545,32 +538,15 @@
                                             </button>
 
                                         </div>
-                                        <div
-                                            class="w-[30px] h-[22px] px-2 py-1 bg-neutral-50 hover:bg-blue-50 rounded-lg justify-start items-center gap-2.5 inline-flex detail_btn">
-                                            <button class="w-3.5 h-3.5 relative">
-                                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <g id="pen-to-square 1" clip-path="url(#clip0_8206_7003)">
-                                                        <path id="Vector"
-                                                            d="M10.952 1.18282C11.7203 0.413995 12.9672 0.413995 13.7355 1.18282L14.0664 1.51423C14.8348 2.28313 14.8348 3.52973 14.0664 4.29809L8.67422 9.69301C8.43633 9.92817 8.14375 10.1004 7.82109 10.1934L5.08672 10.9754C4.85703 11.0411 4.61094 10.9754 4.44141 10.784C4.27461 10.6391 4.20898 10.393 4.27461 10.1633L5.05664 7.42895C5.14961 7.1063 5.32188 6.81372 5.55703 6.57583L10.952 1.18282ZM12.784 2.11087C12.5516 1.85466 12.1359 1.85466 11.8789 2.11087L11.0832 2.9063L12.3438 4.16684L13.1395 3.34653C13.3965 3.11411 13.3965 2.69848 13.1395 2.44227L12.784 2.11087ZM6.31992 7.78989L5.86055 9.3895L7.46016 8.93012C7.56953 8.90005 7.66523 8.84262 7.74453 8.76333L11.4168 5.0938L10.1562 3.83325L6.48672 7.50552C6.40742 7.58481 6.35 7.68051 6.31992 7.78989ZM6.21875 2.25005C6.58242 2.25005 6.875 2.54399 6.875 2.9063C6.875 3.26997 6.58242 3.56255 6.21875 3.56255H3.15625C2.55223 3.56255 2.0625 4.052 2.0625 4.6563V12.0938C2.0625 12.6981 2.55223 13.1875 3.15625 13.1875H10.5938C11.198 13.1875 11.6875 12.6981 11.6875 12.0938V9.0313C11.6875 8.66762 11.9801 8.37505 12.3438 8.37505C12.7074 8.37505 13 8.66762 13 9.0313V12.0938C13 13.4227 11.9227 14.5 10.5938 14.5H3.15625C1.82734 14.5 0.75 13.4227 0.75 12.0938V4.6563C0.75 3.32739 1.82734 2.25005 3.15625 2.25005H6.21875Z"
-                                                            fill="currentColor" />
-                                                    </g>
-                                                    <defs>
-                                                        <clipPath id="clip0_8206_7003">
-                                                            <rect width="14" height="14" fill="white"
-                                                                transform="translate(0.75 0.5)" />
-                                                        </clipPath>
-                                                    </defs>
-                                                </svg>
-
-                                            </button>
-                                        </div>
                                     </div>
                                 </td>
                             </tr>
                             <tr class="py-3 px-5 h-[47px] border-b border-zinc-100 hover:bg-neutral-50">
+                                <td class="pt-[4.5px]">
+                                    <input class="w-4 h-4" type="checkbox" name="check" id="">
+                                </td>
                                 <td class="">
-                                    <p class="text-zinc-800 text-xs font-normal">4</p>
+                                    <p class="text-zinc-800 text-xs font-normal">1</p>
                                 </td>
                                 <td>
                                     <p class="text-zinc-800 text-xs font-normal">45321</p>
@@ -593,17 +569,16 @@
                                 <td>
                                     <div class="flex gap-2">
                                         <div
-                                            class="w-[71px] h-[26px] px-2 py-1 bg-neutral-50 rounded-lg justify-start items-center gap-2.5 inline-flex">
+                                            class="w-[34px] h-[26px] px-2 py-1 bg-neutral-50 rounded-lg justify-start items-center gap-2.5 inline-flex">
                                             <div class="text-zinc-500 text-xs font-normal leading-[18px]">
-                                                19/02/2024</div>
+                                                UV</div>
                                         </div>
                                         <div
-                                            class="w-[42px] h-[26px] px-2 py-1 bg-neutral-50 rounded-lg justify-start items-center gap-2.5 inline-flex">
+                                            class="w-[39px] h-[26px] px-2 py-1 bg-neutral-50 rounded-lg justify-start items-center gap-2.5 inline-flex">
                                             <div class="text-zinc-500 text-xs font-normal leading-[18px]">
-                                                15:25</div>
+                                                PPF</div>
                                         </div>
                                     </div>
-
                                 </td>
                                 <td>
                                     <div
@@ -624,11 +599,11 @@
                                     <div
                                         class=" h-[26px] px-2 py-1 bg-orange-50 rounded-lg justify-start items-center gap-2.5 inline-flex">
                                         <div class="text-orange-500 text-xs font-normal font-['Inter'] leading-[18px]">
-                                            Chờ duyệt</div>
+                                            Chưa giao</div>
                                     </div>
                                 </td>
                                 <td>
-                                    <div class="flex gap-2.5">
+                                    <div class="">
                                         <div
                                             class="w-[31.75px] h-[22px] px-2 py-1 bg-neutral-50 hover:bg-blue-50 rounded-lg justify-start items-center gap-2.5 inline-flex eye_btn">
                                             <button class="w-[15.75px] h-3.5 relative">
@@ -649,32 +624,15 @@
                                             </button>
 
                                         </div>
-                                        <div
-                                            class="w-[30px] h-[22px] px-2 py-1 bg-neutral-50 hover:bg-blue-50 rounded-lg justify-start items-center gap-2.5 inline-flex detail_btn">
-                                            <button class="w-3.5 h-3.5 relative">
-                                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <g id="pen-to-square 1" clip-path="url(#clip0_8206_7003)">
-                                                        <path id="Vector"
-                                                            d="M10.952 1.18282C11.7203 0.413995 12.9672 0.413995 13.7355 1.18282L14.0664 1.51423C14.8348 2.28313 14.8348 3.52973 14.0664 4.29809L8.67422 9.69301C8.43633 9.92817 8.14375 10.1004 7.82109 10.1934L5.08672 10.9754C4.85703 11.0411 4.61094 10.9754 4.44141 10.784C4.27461 10.6391 4.20898 10.393 4.27461 10.1633L5.05664 7.42895C5.14961 7.1063 5.32188 6.81372 5.55703 6.57583L10.952 1.18282ZM12.784 2.11087C12.5516 1.85466 12.1359 1.85466 11.8789 2.11087L11.0832 2.9063L12.3438 4.16684L13.1395 3.34653C13.3965 3.11411 13.3965 2.69848 13.1395 2.44227L12.784 2.11087ZM6.31992 7.78989L5.86055 9.3895L7.46016 8.93012C7.56953 8.90005 7.66523 8.84262 7.74453 8.76333L11.4168 5.0938L10.1562 3.83325L6.48672 7.50552C6.40742 7.58481 6.35 7.68051 6.31992 7.78989ZM6.21875 2.25005C6.58242 2.25005 6.875 2.54399 6.875 2.9063C6.875 3.26997 6.58242 3.56255 6.21875 3.56255H3.15625C2.55223 3.56255 2.0625 4.052 2.0625 4.6563V12.0938C2.0625 12.6981 2.55223 13.1875 3.15625 13.1875H10.5938C11.198 13.1875 11.6875 12.6981 11.6875 12.0938V9.0313C11.6875 8.66762 11.9801 8.37505 12.3438 8.37505C12.7074 8.37505 13 8.66762 13 9.0313V12.0938C13 13.4227 11.9227 14.5 10.5938 14.5H3.15625C1.82734 14.5 0.75 13.4227 0.75 12.0938V4.6563C0.75 3.32739 1.82734 2.25005 3.15625 2.25005H6.21875Z"
-                                                            fill="currentColor" />
-                                                    </g>
-                                                    <defs>
-                                                        <clipPath id="clip0_8206_7003">
-                                                            <rect width="14" height="14" fill="white"
-                                                                transform="translate(0.75 0.5)" />
-                                                        </clipPath>
-                                                    </defs>
-                                                </svg>
-
-                                            </button>
-                                        </div>
                                     </div>
                                 </td>
                             </tr>
                             <tr class="py-3 px-5 h-[47px] border-b border-zinc-100 hover:bg-neutral-50">
+                                <td class="pt-[4.5px]">
+                                    <input class="w-4 h-4" type="checkbox" name="check" id="">
+                                </td>
                                 <td class="">
-                                    <p class="text-zinc-800 text-xs font-normal">5</p>
+                                    <p class="text-zinc-800 text-xs font-normal">1</p>
                                 </td>
                                 <td>
                                     <p class="text-zinc-800 text-xs font-normal">45321</p>
@@ -697,17 +655,16 @@
                                 <td>
                                     <div class="flex gap-2">
                                         <div
-                                            class="w-[71px] h-[26px] px-2 py-1 bg-neutral-50 rounded-lg justify-start items-center gap-2.5 inline-flex">
+                                            class="w-[34px] h-[26px] px-2 py-1 bg-neutral-50 rounded-lg justify-start items-center gap-2.5 inline-flex">
                                             <div class="text-zinc-500 text-xs font-normal leading-[18px]">
-                                                19/02/2024</div>
+                                                UV</div>
                                         </div>
                                         <div
-                                            class="w-[42px] h-[26px] px-2 py-1 bg-neutral-50 rounded-lg justify-start items-center gap-2.5 inline-flex">
+                                            class="w-[39px] h-[26px] px-2 py-1 bg-neutral-50 rounded-lg justify-start items-center gap-2.5 inline-flex">
                                             <div class="text-zinc-500 text-xs font-normal leading-[18px]">
-                                                15:25</div>
+                                                PPF</div>
                                         </div>
                                     </div>
-
                                 </td>
                                 <td>
                                     <div
@@ -728,11 +685,11 @@
                                     <div
                                         class=" h-[26px] px-2 py-1 bg-orange-50 rounded-lg justify-start items-center gap-2.5 inline-flex">
                                         <div class="text-orange-500 text-xs font-normal font-['Inter'] leading-[18px]">
-                                            Chờ duyệt</div>
+                                            Chưa giao</div>
                                     </div>
                                 </td>
                                 <td>
-                                    <div class="flex gap-2.5">
+                                    <div class="">
                                         <div
                                             class="w-[31.75px] h-[22px] px-2 py-1 bg-neutral-50 hover:bg-blue-50 rounded-lg justify-start items-center gap-2.5 inline-flex eye_btn">
                                             <button class="w-[15.75px] h-3.5 relative">
@@ -753,32 +710,15 @@
                                             </button>
 
                                         </div>
-                                        <div
-                                            class="w-[30px] h-[22px] px-2 py-1 bg-neutral-50 hover:bg-blue-50 rounded-lg justify-start items-center gap-2.5 inline-flex detail_btn">
-                                            <button class="w-3.5 h-3.5 relative">
-                                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <g id="pen-to-square 1" clip-path="url(#clip0_8206_7003)">
-                                                        <path id="Vector"
-                                                            d="M10.952 1.18282C11.7203 0.413995 12.9672 0.413995 13.7355 1.18282L14.0664 1.51423C14.8348 2.28313 14.8348 3.52973 14.0664 4.29809L8.67422 9.69301C8.43633 9.92817 8.14375 10.1004 7.82109 10.1934L5.08672 10.9754C4.85703 11.0411 4.61094 10.9754 4.44141 10.784C4.27461 10.6391 4.20898 10.393 4.27461 10.1633L5.05664 7.42895C5.14961 7.1063 5.32188 6.81372 5.55703 6.57583L10.952 1.18282ZM12.784 2.11087C12.5516 1.85466 12.1359 1.85466 11.8789 2.11087L11.0832 2.9063L12.3438 4.16684L13.1395 3.34653C13.3965 3.11411 13.3965 2.69848 13.1395 2.44227L12.784 2.11087ZM6.31992 7.78989L5.86055 9.3895L7.46016 8.93012C7.56953 8.90005 7.66523 8.84262 7.74453 8.76333L11.4168 5.0938L10.1562 3.83325L6.48672 7.50552C6.40742 7.58481 6.35 7.68051 6.31992 7.78989ZM6.21875 2.25005C6.58242 2.25005 6.875 2.54399 6.875 2.9063C6.875 3.26997 6.58242 3.56255 6.21875 3.56255H3.15625C2.55223 3.56255 2.0625 4.052 2.0625 4.6563V12.0938C2.0625 12.6981 2.55223 13.1875 3.15625 13.1875H10.5938C11.198 13.1875 11.6875 12.6981 11.6875 12.0938V9.0313C11.6875 8.66762 11.9801 8.37505 12.3438 8.37505C12.7074 8.37505 13 8.66762 13 9.0313V12.0938C13 13.4227 11.9227 14.5 10.5938 14.5H3.15625C1.82734 14.5 0.75 13.4227 0.75 12.0938V4.6563C0.75 3.32739 1.82734 2.25005 3.15625 2.25005H6.21875Z"
-                                                            fill="currentColor" />
-                                                    </g>
-                                                    <defs>
-                                                        <clipPath id="clip0_8206_7003">
-                                                            <rect width="14" height="14" fill="white"
-                                                                transform="translate(0.75 0.5)" />
-                                                        </clipPath>
-                                                    </defs>
-                                                </svg>
-
-                                            </button>
-                                        </div>
                                     </div>
                                 </td>
                             </tr>
                             <tr class="py-3 px-5 h-[47px] border-b border-zinc-100 hover:bg-neutral-50">
+                                <td class="pt-[4.5px]">
+                                    <input class="w-4 h-4" type="checkbox" name="check" id="">
+                                </td>
                                 <td class="">
-                                    <p class="text-zinc-800 text-xs font-normal">6</p>
+                                    <p class="text-zinc-800 text-xs font-normal">1</p>
                                 </td>
                                 <td>
                                     <p class="text-zinc-800 text-xs font-normal">45321</p>
@@ -801,17 +741,16 @@
                                 <td>
                                     <div class="flex gap-2">
                                         <div
-                                            class="w-[71px] h-[26px] px-2 py-1 bg-neutral-50 rounded-lg justify-start items-center gap-2.5 inline-flex">
+                                            class="w-[34px] h-[26px] px-2 py-1 bg-neutral-50 rounded-lg justify-start items-center gap-2.5 inline-flex">
                                             <div class="text-zinc-500 text-xs font-normal leading-[18px]">
-                                                19/02/2024</div>
+                                                UV</div>
                                         </div>
                                         <div
-                                            class="w-[42px] h-[26px] px-2 py-1 bg-neutral-50 rounded-lg justify-start items-center gap-2.5 inline-flex">
+                                            class="w-[39px] h-[26px] px-2 py-1 bg-neutral-50 rounded-lg justify-start items-center gap-2.5 inline-flex">
                                             <div class="text-zinc-500 text-xs font-normal leading-[18px]">
-                                                15:25</div>
+                                                PPF</div>
                                         </div>
                                     </div>
-
                                 </td>
                                 <td>
                                     <div
@@ -832,11 +771,11 @@
                                     <div
                                         class=" h-[26px] px-2 py-1 bg-orange-50 rounded-lg justify-start items-center gap-2.5 inline-flex">
                                         <div class="text-orange-500 text-xs font-normal font-['Inter'] leading-[18px]">
-                                            Chờ duyệt</div>
+                                            Chưa giao</div>
                                     </div>
                                 </td>
                                 <td>
-                                    <div class="flex gap-2.5">
+                                    <div class="">
                                         <div
                                             class="w-[31.75px] h-[22px] px-2 py-1 bg-neutral-50 hover:bg-blue-50 rounded-lg justify-start items-center gap-2.5 inline-flex eye_btn">
                                             <button class="w-[15.75px] h-3.5 relative">
@@ -857,32 +796,15 @@
                                             </button>
 
                                         </div>
-                                        <div
-                                            class="w-[30px] h-[22px] px-2 py-1 bg-neutral-50 hover:bg-blue-50 rounded-lg justify-start items-center gap-2.5 inline-flex detail_btn">
-                                            <button class="w-3.5 h-3.5 relative">
-                                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <g id="pen-to-square 1" clip-path="url(#clip0_8206_7003)">
-                                                        <path id="Vector"
-                                                            d="M10.952 1.18282C11.7203 0.413995 12.9672 0.413995 13.7355 1.18282L14.0664 1.51423C14.8348 2.28313 14.8348 3.52973 14.0664 4.29809L8.67422 9.69301C8.43633 9.92817 8.14375 10.1004 7.82109 10.1934L5.08672 10.9754C4.85703 11.0411 4.61094 10.9754 4.44141 10.784C4.27461 10.6391 4.20898 10.393 4.27461 10.1633L5.05664 7.42895C5.14961 7.1063 5.32188 6.81372 5.55703 6.57583L10.952 1.18282ZM12.784 2.11087C12.5516 1.85466 12.1359 1.85466 11.8789 2.11087L11.0832 2.9063L12.3438 4.16684L13.1395 3.34653C13.3965 3.11411 13.3965 2.69848 13.1395 2.44227L12.784 2.11087ZM6.31992 7.78989L5.86055 9.3895L7.46016 8.93012C7.56953 8.90005 7.66523 8.84262 7.74453 8.76333L11.4168 5.0938L10.1562 3.83325L6.48672 7.50552C6.40742 7.58481 6.35 7.68051 6.31992 7.78989ZM6.21875 2.25005C6.58242 2.25005 6.875 2.54399 6.875 2.9063C6.875 3.26997 6.58242 3.56255 6.21875 3.56255H3.15625C2.55223 3.56255 2.0625 4.052 2.0625 4.6563V12.0938C2.0625 12.6981 2.55223 13.1875 3.15625 13.1875H10.5938C11.198 13.1875 11.6875 12.6981 11.6875 12.0938V9.0313C11.6875 8.66762 11.9801 8.37505 12.3438 8.37505C12.7074 8.37505 13 8.66762 13 9.0313V12.0938C13 13.4227 11.9227 14.5 10.5938 14.5H3.15625C1.82734 14.5 0.75 13.4227 0.75 12.0938V4.6563C0.75 3.32739 1.82734 2.25005 3.15625 2.25005H6.21875Z"
-                                                            fill="currentColor" />
-                                                    </g>
-                                                    <defs>
-                                                        <clipPath id="clip0_8206_7003">
-                                                            <rect width="14" height="14" fill="white"
-                                                                transform="translate(0.75 0.5)" />
-                                                        </clipPath>
-                                                    </defs>
-                                                </svg>
-
-                                            </button>
-                                        </div>
                                     </div>
                                 </td>
                             </tr>
                             <tr class="py-3 px-5 h-[47px] border-b border-zinc-100 hover:bg-neutral-50">
+                                <td class="pt-[4.5px]">
+                                    <input class="w-4 h-4" type="checkbox" name="check" id="">
+                                </td>
                                 <td class="">
-                                    <p class="text-zinc-800 text-xs font-normal">7</p>
+                                    <p class="text-zinc-800 text-xs font-normal">1</p>
                                 </td>
                                 <td>
                                     <p class="text-zinc-800 text-xs font-normal">45321</p>
@@ -905,17 +827,16 @@
                                 <td>
                                     <div class="flex gap-2">
                                         <div
-                                            class="w-[71px] h-[26px] px-2 py-1 bg-neutral-50 rounded-lg justify-start items-center gap-2.5 inline-flex">
+                                            class="w-[34px] h-[26px] px-2 py-1 bg-neutral-50 rounded-lg justify-start items-center gap-2.5 inline-flex">
                                             <div class="text-zinc-500 text-xs font-normal leading-[18px]">
-                                                19/02/2024</div>
+                                                UV</div>
                                         </div>
                                         <div
-                                            class="w-[42px] h-[26px] px-2 py-1 bg-neutral-50 rounded-lg justify-start items-center gap-2.5 inline-flex">
+                                            class="w-[39px] h-[26px] px-2 py-1 bg-neutral-50 rounded-lg justify-start items-center gap-2.5 inline-flex">
                                             <div class="text-zinc-500 text-xs font-normal leading-[18px]">
-                                                15:25</div>
+                                                PPF</div>
                                         </div>
                                     </div>
-
                                 </td>
                                 <td>
                                     <div
@@ -936,11 +857,11 @@
                                     <div
                                         class=" h-[26px] px-2 py-1 bg-orange-50 rounded-lg justify-start items-center gap-2.5 inline-flex">
                                         <div class="text-orange-500 text-xs font-normal font-['Inter'] leading-[18px]">
-                                            Chờ duyệt</div>
+                                            Chưa giao</div>
                                     </div>
                                 </td>
                                 <td>
-                                    <div class="flex gap-2.5">
+                                    <div class="">
                                         <div
                                             class="w-[31.75px] h-[22px] px-2 py-1 bg-neutral-50 hover:bg-blue-50 rounded-lg justify-start items-center gap-2.5 inline-flex eye_btn">
                                             <button class="w-[15.75px] h-3.5 relative">
@@ -961,32 +882,15 @@
                                             </button>
 
                                         </div>
-                                        <div
-                                            class="w-[30px] h-[22px] px-2 py-1 bg-neutral-50 hover:bg-blue-50 rounded-lg justify-start items-center gap-2.5 inline-flex detail_btn">
-                                            <button class="w-3.5 h-3.5 relative">
-                                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <g id="pen-to-square 1" clip-path="url(#clip0_8206_7003)">
-                                                        <path id="Vector"
-                                                            d="M10.952 1.18282C11.7203 0.413995 12.9672 0.413995 13.7355 1.18282L14.0664 1.51423C14.8348 2.28313 14.8348 3.52973 14.0664 4.29809L8.67422 9.69301C8.43633 9.92817 8.14375 10.1004 7.82109 10.1934L5.08672 10.9754C4.85703 11.0411 4.61094 10.9754 4.44141 10.784C4.27461 10.6391 4.20898 10.393 4.27461 10.1633L5.05664 7.42895C5.14961 7.1063 5.32188 6.81372 5.55703 6.57583L10.952 1.18282ZM12.784 2.11087C12.5516 1.85466 12.1359 1.85466 11.8789 2.11087L11.0832 2.9063L12.3438 4.16684L13.1395 3.34653C13.3965 3.11411 13.3965 2.69848 13.1395 2.44227L12.784 2.11087ZM6.31992 7.78989L5.86055 9.3895L7.46016 8.93012C7.56953 8.90005 7.66523 8.84262 7.74453 8.76333L11.4168 5.0938L10.1562 3.83325L6.48672 7.50552C6.40742 7.58481 6.35 7.68051 6.31992 7.78989ZM6.21875 2.25005C6.58242 2.25005 6.875 2.54399 6.875 2.9063C6.875 3.26997 6.58242 3.56255 6.21875 3.56255H3.15625C2.55223 3.56255 2.0625 4.052 2.0625 4.6563V12.0938C2.0625 12.6981 2.55223 13.1875 3.15625 13.1875H10.5938C11.198 13.1875 11.6875 12.6981 11.6875 12.0938V9.0313C11.6875 8.66762 11.9801 8.37505 12.3438 8.37505C12.7074 8.37505 13 8.66762 13 9.0313V12.0938C13 13.4227 11.9227 14.5 10.5938 14.5H3.15625C1.82734 14.5 0.75 13.4227 0.75 12.0938V4.6563C0.75 3.32739 1.82734 2.25005 3.15625 2.25005H6.21875Z"
-                                                            fill="currentColor" />
-                                                    </g>
-                                                    <defs>
-                                                        <clipPath id="clip0_8206_7003">
-                                                            <rect width="14" height="14" fill="white"
-                                                                transform="translate(0.75 0.5)" />
-                                                        </clipPath>
-                                                    </defs>
-                                                </svg>
-
-                                            </button>
-                                        </div>
                                     </div>
                                 </td>
                             </tr>
                             <tr class="py-3 px-5 h-[47px] border-b border-zinc-100 hover:bg-neutral-50">
+                                <td class="pt-[4.5px]">
+                                    <input class="w-4 h-4" type="checkbox" name="check" id="">
+                                </td>
                                 <td class="">
-                                    <p class="text-zinc-800 text-xs font-normal">8</p>
+                                    <p class="text-zinc-800 text-xs font-normal">1</p>
                                 </td>
                                 <td>
                                     <p class="text-zinc-800 text-xs font-normal">45321</p>
@@ -1009,17 +913,16 @@
                                 <td>
                                     <div class="flex gap-2">
                                         <div
-                                            class="w-[71px] h-[26px] px-2 py-1 bg-neutral-50 rounded-lg justify-start items-center gap-2.5 inline-flex">
+                                            class="w-[34px] h-[26px] px-2 py-1 bg-neutral-50 rounded-lg justify-start items-center gap-2.5 inline-flex">
                                             <div class="text-zinc-500 text-xs font-normal leading-[18px]">
-                                                19/02/2024</div>
+                                                UV</div>
                                         </div>
                                         <div
-                                            class="w-[42px] h-[26px] px-2 py-1 bg-neutral-50 rounded-lg justify-start items-center gap-2.5 inline-flex">
+                                            class="w-[39px] h-[26px] px-2 py-1 bg-neutral-50 rounded-lg justify-start items-center gap-2.5 inline-flex">
                                             <div class="text-zinc-500 text-xs font-normal leading-[18px]">
-                                                15:25</div>
+                                                PPF</div>
                                         </div>
                                     </div>
-
                                 </td>
                                 <td>
                                     <div
@@ -1040,11 +943,11 @@
                                     <div
                                         class=" h-[26px] px-2 py-1 bg-orange-50 rounded-lg justify-start items-center gap-2.5 inline-flex">
                                         <div class="text-orange-500 text-xs font-normal font-['Inter'] leading-[18px]">
-                                            Chờ duyệt</div>
+                                            Chưa giao</div>
                                     </div>
                                 </td>
                                 <td>
-                                    <div class="flex gap-2.5">
+                                    <div class="">
                                         <div
                                             class="w-[31.75px] h-[22px] px-2 py-1 bg-neutral-50 hover:bg-blue-50 rounded-lg justify-start items-center gap-2.5 inline-flex eye_btn">
                                             <button class="w-[15.75px] h-3.5 relative">
@@ -1065,32 +968,15 @@
                                             </button>
 
                                         </div>
-                                        <div
-                                            class="w-[30px] h-[22px] px-2 py-1 bg-neutral-50 hover:bg-blue-50 rounded-lg justify-start items-center gap-2.5 inline-flex detail_btn">
-                                            <button class="w-3.5 h-3.5 relative">
-                                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <g id="pen-to-square 1" clip-path="url(#clip0_8206_7003)">
-                                                        <path id="Vector"
-                                                            d="M10.952 1.18282C11.7203 0.413995 12.9672 0.413995 13.7355 1.18282L14.0664 1.51423C14.8348 2.28313 14.8348 3.52973 14.0664 4.29809L8.67422 9.69301C8.43633 9.92817 8.14375 10.1004 7.82109 10.1934L5.08672 10.9754C4.85703 11.0411 4.61094 10.9754 4.44141 10.784C4.27461 10.6391 4.20898 10.393 4.27461 10.1633L5.05664 7.42895C5.14961 7.1063 5.32188 6.81372 5.55703 6.57583L10.952 1.18282ZM12.784 2.11087C12.5516 1.85466 12.1359 1.85466 11.8789 2.11087L11.0832 2.9063L12.3438 4.16684L13.1395 3.34653C13.3965 3.11411 13.3965 2.69848 13.1395 2.44227L12.784 2.11087ZM6.31992 7.78989L5.86055 9.3895L7.46016 8.93012C7.56953 8.90005 7.66523 8.84262 7.74453 8.76333L11.4168 5.0938L10.1562 3.83325L6.48672 7.50552C6.40742 7.58481 6.35 7.68051 6.31992 7.78989ZM6.21875 2.25005C6.58242 2.25005 6.875 2.54399 6.875 2.9063C6.875 3.26997 6.58242 3.56255 6.21875 3.56255H3.15625C2.55223 3.56255 2.0625 4.052 2.0625 4.6563V12.0938C2.0625 12.6981 2.55223 13.1875 3.15625 13.1875H10.5938C11.198 13.1875 11.6875 12.6981 11.6875 12.0938V9.0313C11.6875 8.66762 11.9801 8.37505 12.3438 8.37505C12.7074 8.37505 13 8.66762 13 9.0313V12.0938C13 13.4227 11.9227 14.5 10.5938 14.5H3.15625C1.82734 14.5 0.75 13.4227 0.75 12.0938V4.6563C0.75 3.32739 1.82734 2.25005 3.15625 2.25005H6.21875Z"
-                                                            fill="currentColor" />
-                                                    </g>
-                                                    <defs>
-                                                        <clipPath id="clip0_8206_7003">
-                                                            <rect width="14" height="14" fill="white"
-                                                                transform="translate(0.75 0.5)" />
-                                                        </clipPath>
-                                                    </defs>
-                                                </svg>
-
-                                            </button>
-                                        </div>
                                     </div>
                                 </td>
                             </tr>
                             <tr class="py-3 px-5 h-[47px] border-b border-zinc-100 hover:bg-neutral-50">
+                                <td class="pt-[4.5px]">
+                                    <input class="w-4 h-4" type="checkbox" name="check" id="">
+                                </td>
                                 <td class="">
-                                    <p class="text-zinc-800 text-xs font-normal">9</p>
+                                    <p class="text-zinc-800 text-xs font-normal">1</p>
                                 </td>
                                 <td>
                                     <p class="text-zinc-800 text-xs font-normal">45321</p>
@@ -1113,17 +999,16 @@
                                 <td>
                                     <div class="flex gap-2">
                                         <div
-                                            class="w-[71px] h-[26px] px-2 py-1 bg-neutral-50 rounded-lg justify-start items-center gap-2.5 inline-flex">
+                                            class="w-[34px] h-[26px] px-2 py-1 bg-neutral-50 rounded-lg justify-start items-center gap-2.5 inline-flex">
                                             <div class="text-zinc-500 text-xs font-normal leading-[18px]">
-                                                19/02/2024</div>
+                                                UV</div>
                                         </div>
                                         <div
-                                            class="w-[42px] h-[26px] px-2 py-1 bg-neutral-50 rounded-lg justify-start items-center gap-2.5 inline-flex">
+                                            class="w-[39px] h-[26px] px-2 py-1 bg-neutral-50 rounded-lg justify-start items-center gap-2.5 inline-flex">
                                             <div class="text-zinc-500 text-xs font-normal leading-[18px]">
-                                                15:25</div>
+                                                PPF</div>
                                         </div>
                                     </div>
-
                                 </td>
                                 <td>
                                     <div
@@ -1144,11 +1029,11 @@
                                     <div
                                         class=" h-[26px] px-2 py-1 bg-orange-50 rounded-lg justify-start items-center gap-2.5 inline-flex">
                                         <div class="text-orange-500 text-xs font-normal font-['Inter'] leading-[18px]">
-                                            Chờ duyệt</div>
+                                            Chưa giao</div>
                                     </div>
                                 </td>
                                 <td>
-                                    <div class="flex gap-2.5">
+                                    <div class="">
                                         <div
                                             class="w-[31.75px] h-[22px] px-2 py-1 bg-neutral-50 hover:bg-blue-50 rounded-lg justify-start items-center gap-2.5 inline-flex eye_btn">
                                             <button class="w-[15.75px] h-3.5 relative">
@@ -1169,32 +1054,15 @@
                                             </button>
 
                                         </div>
-                                        <div
-                                            class="w-[30px] h-[22px] px-2 py-1 bg-neutral-50 hover:bg-blue-50 rounded-lg justify-start items-center gap-2.5 inline-flex detail_btn">
-                                            <button class="w-3.5 h-3.5 relative">
-                                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <g id="pen-to-square 1" clip-path="url(#clip0_8206_7003)">
-                                                        <path id="Vector"
-                                                            d="M10.952 1.18282C11.7203 0.413995 12.9672 0.413995 13.7355 1.18282L14.0664 1.51423C14.8348 2.28313 14.8348 3.52973 14.0664 4.29809L8.67422 9.69301C8.43633 9.92817 8.14375 10.1004 7.82109 10.1934L5.08672 10.9754C4.85703 11.0411 4.61094 10.9754 4.44141 10.784C4.27461 10.6391 4.20898 10.393 4.27461 10.1633L5.05664 7.42895C5.14961 7.1063 5.32188 6.81372 5.55703 6.57583L10.952 1.18282ZM12.784 2.11087C12.5516 1.85466 12.1359 1.85466 11.8789 2.11087L11.0832 2.9063L12.3438 4.16684L13.1395 3.34653C13.3965 3.11411 13.3965 2.69848 13.1395 2.44227L12.784 2.11087ZM6.31992 7.78989L5.86055 9.3895L7.46016 8.93012C7.56953 8.90005 7.66523 8.84262 7.74453 8.76333L11.4168 5.0938L10.1562 3.83325L6.48672 7.50552C6.40742 7.58481 6.35 7.68051 6.31992 7.78989ZM6.21875 2.25005C6.58242 2.25005 6.875 2.54399 6.875 2.9063C6.875 3.26997 6.58242 3.56255 6.21875 3.56255H3.15625C2.55223 3.56255 2.0625 4.052 2.0625 4.6563V12.0938C2.0625 12.6981 2.55223 13.1875 3.15625 13.1875H10.5938C11.198 13.1875 11.6875 12.6981 11.6875 12.0938V9.0313C11.6875 8.66762 11.9801 8.37505 12.3438 8.37505C12.7074 8.37505 13 8.66762 13 9.0313V12.0938C13 13.4227 11.9227 14.5 10.5938 14.5H3.15625C1.82734 14.5 0.75 13.4227 0.75 12.0938V4.6563C0.75 3.32739 1.82734 2.25005 3.15625 2.25005H6.21875Z"
-                                                            fill="currentColor" />
-                                                    </g>
-                                                    <defs>
-                                                        <clipPath id="clip0_8206_7003">
-                                                            <rect width="14" height="14" fill="white"
-                                                                transform="translate(0.75 0.5)" />
-                                                        </clipPath>
-                                                    </defs>
-                                                </svg>
-
-                                            </button>
-                                        </div>
                                     </div>
                                 </td>
                             </tr>
                             <tr class="py-3 px-5 h-[47px] border-b border-zinc-100 hover:bg-neutral-50">
+                                <td class="pt-[4.5px]">
+                                    <input class="w-4 h-4" type="checkbox" name="check" id="">
+                                </td>
                                 <td class="">
-                                    <p class="text-zinc-800 text-xs font-normal">10</p>
+                                    <p class="text-zinc-800 text-xs font-normal">1</p>
                                 </td>
                                 <td>
                                     <p class="text-zinc-800 text-xs font-normal">45321</p>
@@ -1217,17 +1085,16 @@
                                 <td>
                                     <div class="flex gap-2">
                                         <div
-                                            class="w-[71px] h-[26px] px-2 py-1 bg-neutral-50 rounded-lg justify-start items-center gap-2.5 inline-flex">
+                                            class="w-[34px] h-[26px] px-2 py-1 bg-neutral-50 rounded-lg justify-start items-center gap-2.5 inline-flex">
                                             <div class="text-zinc-500 text-xs font-normal leading-[18px]">
-                                                19/02/2024</div>
+                                                UV</div>
                                         </div>
                                         <div
-                                            class="w-[42px] h-[26px] px-2 py-1 bg-neutral-50 rounded-lg justify-start items-center gap-2.5 inline-flex">
+                                            class="w-[39px] h-[26px] px-2 py-1 bg-neutral-50 rounded-lg justify-start items-center gap-2.5 inline-flex">
                                             <div class="text-zinc-500 text-xs font-normal leading-[18px]">
-                                                15:25</div>
+                                                PPF</div>
                                         </div>
                                     </div>
-
                                 </td>
                                 <td>
                                     <div
@@ -1248,11 +1115,11 @@
                                     <div
                                         class=" h-[26px] px-2 py-1 bg-orange-50 rounded-lg justify-start items-center gap-2.5 inline-flex">
                                         <div class="text-orange-500 text-xs font-normal font-['Inter'] leading-[18px]">
-                                            Chờ duyệt</div>
+                                            Chưa giao</div>
                                     </div>
                                 </td>
                                 <td>
-                                    <div class="flex gap-2.5">
+                                    <div class="">
                                         <div
                                             class="w-[31.75px] h-[22px] px-2 py-1 bg-neutral-50 hover:bg-blue-50 rounded-lg justify-start items-center gap-2.5 inline-flex eye_btn">
                                             <button class="w-[15.75px] h-3.5 relative">
@@ -1272,26 +1139,6 @@
                                                 </svg>
                                             </button>
 
-                                        </div>
-                                        <div
-                                            class="w-[30px] h-[22px] px-2 py-1 bg-neutral-50 hover:bg-blue-50 rounded-lg justify-start items-center gap-2.5 inline-flex detail_btn">
-                                            <button class="w-3.5 h-3.5 relative">
-                                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <g id="pen-to-square 1" clip-path="url(#clip0_8206_7003)">
-                                                        <path id="Vector"
-                                                            d="M10.952 1.18282C11.7203 0.413995 12.9672 0.413995 13.7355 1.18282L14.0664 1.51423C14.8348 2.28313 14.8348 3.52973 14.0664 4.29809L8.67422 9.69301C8.43633 9.92817 8.14375 10.1004 7.82109 10.1934L5.08672 10.9754C4.85703 11.0411 4.61094 10.9754 4.44141 10.784C4.27461 10.6391 4.20898 10.393 4.27461 10.1633L5.05664 7.42895C5.14961 7.1063 5.32188 6.81372 5.55703 6.57583L10.952 1.18282ZM12.784 2.11087C12.5516 1.85466 12.1359 1.85466 11.8789 2.11087L11.0832 2.9063L12.3438 4.16684L13.1395 3.34653C13.3965 3.11411 13.3965 2.69848 13.1395 2.44227L12.784 2.11087ZM6.31992 7.78989L5.86055 9.3895L7.46016 8.93012C7.56953 8.90005 7.66523 8.84262 7.74453 8.76333L11.4168 5.0938L10.1562 3.83325L6.48672 7.50552C6.40742 7.58481 6.35 7.68051 6.31992 7.78989ZM6.21875 2.25005C6.58242 2.25005 6.875 2.54399 6.875 2.9063C6.875 3.26997 6.58242 3.56255 6.21875 3.56255H3.15625C2.55223 3.56255 2.0625 4.052 2.0625 4.6563V12.0938C2.0625 12.6981 2.55223 13.1875 3.15625 13.1875H10.5938C11.198 13.1875 11.6875 12.6981 11.6875 12.0938V9.0313C11.6875 8.66762 11.9801 8.37505 12.3438 8.37505C12.7074 8.37505 13 8.66762 13 9.0313V12.0938C13 13.4227 11.9227 14.5 10.5938 14.5H3.15625C1.82734 14.5 0.75 13.4227 0.75 12.0938V4.6563C0.75 3.32739 1.82734 2.25005 3.15625 2.25005H6.21875Z"
-                                                            fill="currentColor" />
-                                                    </g>
-                                                    <defs>
-                                                        <clipPath id="clip0_8206_7003">
-                                                            <rect width="14" height="14" fill="white"
-                                                                transform="translate(0.75 0.5)" />
-                                                        </clipPath>
-                                                    </defs>
-                                                </svg>
-
-                                            </button>
                                         </div>
                                     </div>
                                 </td>
