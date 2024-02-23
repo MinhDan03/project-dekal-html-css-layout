@@ -1,3 +1,27 @@
 body {
     font-family: "Inter", sans-serif;
 }
+
+td:first-child {
+    padding-left: 20px;
+}
+
+td:last-child {
+    padding-right: 20px;
+}
+
+.eye_btn {
+    color: #71717A;
+}
+
+.eye_btn:hover {
+    color: #60A5FA;
+}
+
+.detail_btn {
+    color: #71717A;
+}
+
+.detail_btn:hover {
+    color: #60A5FA;
+}
