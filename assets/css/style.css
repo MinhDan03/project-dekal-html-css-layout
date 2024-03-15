@@ -100,3 +100,19 @@ td:last-child {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+/* Product-management */
+.product-left{
+    background:  linear-gradient(90deg, #893835 0%, #FF564F 100%);
+}
+.bg-product{
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.52);
+    background: rgba(255, 255, 255, 0.20);
+    backdrop-filter: blur(13.800000190734863px);
+}
+#my-file-input::-webkit-file-upload-button {
+    display: none;
+ }
+ #my-file-input{
+    color:transparent
+ }
