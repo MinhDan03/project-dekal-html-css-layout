@@ -68,6 +68,11 @@ td:last-child {
     background-size: cover;
     height: 338px;
 }
+@media (max-width: 998.98px) {
+    .service{
+        height: 250px;
+    }
+}
 /* Product */
 .item:hover img {
     transform: scale(1.1); /* Scale lên 110% khi hover */
@@ -116,3 +121,11 @@ td:last-child {
  #my-file-input{
     color:transparent
  }
+
+ /* .menu-checkbox:checked ~ .menu-overlay {
+    opacity: 1;
+    visibility: visible;
+}
+.menu-checkbox:checked ~ .menu-drawer {
+    transform: translateX(0);
+} */
