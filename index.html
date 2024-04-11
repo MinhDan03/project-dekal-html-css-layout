@@ -23,6 +23,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- CDN AOS animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- CDN JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <style>
       .aboutus-active {
         background-color: #be185d !important;
@@ -54,7 +58,7 @@
   <body class="bg-[#f4f4f5]">
     <div class="bg-[#f4f4f5] w-screen overflow-x-hidden">
         <button
-            class="fixed hidden bottom-5 end-5 rounded-full bg-red-600 p-3 text-xs font-medium uppercase leading-tight text-white shadow-md transition duration-150 ease-in-out hover:bg-red-700 hover:shadow-lg focus:bg-red-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-lg"
+            class="fixed hidden bottom-5 end-5 z-[100] rounded-full bg-red-600 p-3 text-xs font-medium uppercase leading-tight text-white shadow-md transition duration-150 ease-in-out hover:bg-red-700 hover:shadow-lg focus:bg-red-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-lg"
             id="btn-back-to-top">
             <span class="[&>svg]:w-4">
                 <svg
@@ -91,7 +95,7 @@
                 />
               </svg>
             </label>
-            <a href="#!"
+            <a href="#!" id="logo"
               ><img
                 src="./assets/img/Logo-Dekal.svg"
                 class="block w-[34px] h-[34px] max-[998.98px]:absolute max-[998.98px]:top-[50%] max-[998.98px]:left-[50%] max-[998.98px]:translate-x-[-50%] max-[998.98px]:translate-y-[-50%] max-[998.98px]:w-[30px] max-[998.98px]:h-[30px]"
@@ -130,8 +134,8 @@
                 >
               </li>
             </ul>
-            <a href="#contact" class="w-32 h-10 px-[23px] py-2 bg-gradient-to-br from-red-500 to-red-950 rounded justify-between items-center gap-2 inline-flex">
-                <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <a href="#contact" class="w-32 h-10 px-[23px] py-2 bg-gradient-to-br from-red-500 to-red-950 rounded justify-between items-center gap-2 inline-flex max-[767.98px]:w-[90px] max-[767.98px]:inline-block max-[767.98px]:px-[0px] max-[767.98px]:py-[0px]">
+                <svg class="max-[767.98px]:hidden" width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g id="Frame" clip-path="url(#clip0_10548_3660)">
                         <path id="Vector" d="M5.97832 0.7686C5.7377 0.18735 5.10332 -0.122025 4.49707 0.0436001L1.74707 0.7936C1.20332 0.9436 0.825195 1.43735 0.825195 1.99985C0.825195 9.7311 7.09395 15.9998 14.8252 15.9998C15.3877 15.9998 15.8814 15.6217 16.0314 15.078L16.7814 12.328C16.9471 11.7217 16.6377 11.0874 16.0564 10.8467L13.0564 9.59673C12.5471 9.38423 11.9564 9.5311 11.6096 9.95923L10.3471 11.4999C8.14707 10.4592 6.36582 8.67798 5.3252 6.47798L6.86582 5.2186C7.29395 4.8686 7.44082 4.2811 7.22832 3.77172L5.97832 0.771725V0.7686Z" fill="white"/>
                     </g>
@@ -141,7 +145,7 @@
                         </clipPath>
                     </defs>
                 </svg>
-                <div class="text-white text-base font-medium font-['Inter'] leading-normal">Liên hệ</div>
+                <div class="text-white text-base font-medium font-['Inter'] leading-normal max-[767.98px]:flex max-[767.98px]:justify-center max-[767.98px]:items-center max-[767.98px]:leading-[40px]">Liên hệ</div>
             </a>
           </div>
         </div>
@@ -162,13 +166,13 @@
         ></label>
         <!-- Menu Content -->
         <div
-          class="menu-drawer max-[998.98px]:fixed max-[998.98px]:p-[60px] max-[998.98px]:top-0 max-[998.98px]:bottom-0 max-[998.98px]:left-0 max-[998.98px]:w-[40%] max-[998.98px]:bg-black max-[998.98px]:text-white max-[998.98px]:z-20 max-[998.98px]:translate-x-[-100%] max-[998.98px]:transition max-[998.98px]:duration-[0.5s] max-[998.98px]:ease-out max-[998.98px]:peer-checked:translate-x-[0] max-[767.98px]:w-[60%] max-[767.98px]:p-[30px]"
+          class="menu-drawer max-[998.98px]:fixed max-[998.98px]:p-[60px] max-[998.98px]:top-0 max-[998.98px]:bottom-0 max-[998.98px]:left-0 max-[998.98px]:w-[40%] max-[998.98px]:bg-black max-[998.98px]:text-white max-[998.98px]:z-[60] max-[998.98px]:translate-x-[-100%] max-[998.98px]:transition max-[998.98px]:duration-[0.5s] max-[998.98px]:ease-out max-[998.98px]:peer-checked:translate-x-[0] max-[767.98px]:w-[60%] max-[767.98px]:p-[30px]"
         >
           <!-- Logo -->
           <a href="#!"
             ><img
               src="./assets/img/Logo-Dekal.svg"
-              class="block w-[34px] h-[34px]"
+              class="block w-[34px] h-[34px] max-[998.98px]:mt-[20px]"
               alt=""
           /></a>
           <!-- Navigation -->
@@ -253,7 +257,7 @@
       </section>
       <!-- List -->
       <div
-        class="flex flex-col justify-center px-[120px] mx-auto py-[40px] max-[998.98px]:px-[60px] max-[767.98px]:py-[20px] max-[767.98px]:px-[30px]"
+        class="flex flex-col justify-center px-[120px] mx-auto py-[40px] max-[998.98px]:px-[30px] max-[767.98px]:py-[20px] max-[767.98px]:px-[30px]"
       >
         <!-- list car -->
         <section class="list-car">
@@ -267,10 +271,10 @@
           ></div>
         </section>
         <!-- Introduction -->
-        <section class="p-[64px] flex gap-3" id="about">
-          <img src="../assets/img/about-pink.png" alt="" />
-          <div>
-            <div class="pb-8">
+        <section class="pt-[90px] pb-[20px] mx-auto flex gap-3  max-[998.98px]:pt-[50px] max-[998.98px]:gap-5 max-[767.98px]:flex-col max-[767.98px]:pt-[0px]" id="about">
+          <img src="../assets/img/about-pink.png" class="inline-block w-[50%] object-cover ml-[-33px] pb-[10px] max-[998.98px]:w-[50%] max-[998.98px]:ml-[0px] max-[998.98px]:py-[100px] max-[767.98px]:hidden max-[767.98px]:w-full max-[767.98px]:py-[0px]" alt="" />
+          <div class="pl-[17px] max-[998.98px]:pl-[0px]  max-[998.98px]:w-full">
+            <div class="pb-8 max-[767.98px]:w-full">
               <div class="justify-center items-center gap-2.5 inline-flex">
                 <div>
                   <div
@@ -298,16 +302,16 @@
                 <div
                   class="text-stone-900 text-lg font-normal font-['Inter'] capitalize"
                 >
-                  About us
+                 Về chúng tôi
                 </div>
               </div>
               <div
-                class="my-3 text-stone-900 text-[35px] font-semibold font-['Inter'] capitalize"
+                class="my-3 text-stone-900 text-[35px] font-semibold font-['Inter'] capitalize max-[998.98px]:text-[24px]"
               >
-                Our Company Overview
+                Tổng Quan Về Công Ty
               </div>
               <div
-                class="w-[592px] text-slate-500 text-base font-medium font-['Inter'] leading-normal"
+                class="w-[592px] text-slate-500 text-base font-medium font-['Inter'] leading-normal max-[998.98px]:text-[14px] max-[998.98px]:w-[320px]"
               >
                 Dekal tự hào là điểm đến hàng đầu cho các giải pháp dán decal xe
                 hơi, mang lại diện mạo mới mẻ và độc đáo cho phương tiện của
@@ -315,35 +319,35 @@
                 cao, phản ánh phong cách và cá tính của mỗi khách hàng. Dưới đây
                 là các thông tin giúp bạn tìm hiểu sâu hơn về chúng tôi:
               </div>
-              <div class="flex gap-4 mt-6">
+              <div class="flex gap-4 mt-6  max-[998.98px]:gap-3">
                 <div
-                  class="aboutus-btn w-[185.33px] h-[54px] px-6 py-4 bg-gray-200 rounded justify-center items-center gap-2 inline-flex aboutus-active cursor-pointer"
+                  class="aboutus-btn px-4 py-2 bg-gray-200 rounded justify-center items-center gap-2 inline-flex aboutus-active cursor-pointer max-[998.98px]:px-2 max-[998.98px]:py-2"
                   id="aboutus-company"
                 >
                   <div
-                    class="text-center text-stone-900 text-lg font-medium font-['Inter'] capitalize"
+                    class="text-center text-stone-900 text-lg font-medium font-['Inter'] capitalize max-[998.98px]:text-[14px]"
                   >
-                    Company
+                    Công ty
                   </div>
                 </div>
                 <div
-                  class="aboutus-btn w-[185.33px] h-[54px] px-6 py-4 bg-gray-200 bg-opacity-50 rounded justify-center items-center gap-2 inline-flex cursor-pointer"
+                  class="aboutus-btn px-4 py-2 bg-gray-200 bg-opacity-50 rounded justify-center items-center gap-2 inline-flex cursor-pointer max-[998.98px]:px-2 max-[998.98px]:py-2"
                   id="aboutus-products"
                 >
                   <div
-                    class="text-center text-stone-900 text-lg font-medium font-['Inter'] capitalize"
+                    class="text-center text-stone-900 text-lg font-medium font-['Inter'] capitalize max-[998.98px]:text-[14px]"
                   >
-                    Products
+                    Sản phẩm
                   </div>
                 </div>
                 <div
-                  class="aboutus-btn w-[185.33px] h-[54px] px-6 py-4 bg-gray-200 bg-opacity-50 rounded justify-center items-center gap-2 inline-flex cursor-pointer"
+                  class="aboutus-btn px-4 py-2 bg-gray-200 bg-opacity-50 rounded justify-center items-center gap-2 inline-flex cursor-pointer max-[998.98px]:px-2 max-[998.98px]:py-2"
                   id="aboutus-team"
                 >
                   <div
-                    class="text-center text-stone-900 text-lg font-medium font-['Inter'] capitalize"
+                    class="text-center text-stone-900 text-lg font-medium font-['Inter'] capitalize max-[998.98px]:text-[14px]"
                   >
-                    Our team
+                    Đội ngũ
                   </div>
                 </div>
               </div>
@@ -351,7 +355,7 @@
             <hr />
             <div class="flex flex-col gap-6 pt-8">
               <div
-                class="w-[592px] text-slate-500 text-base font-medium font-['Inter'] leading-normal"
+                class="w-[592px] text-slate-500 text-base font-medium font-['Inter'] leading-normal max-[998.98px]:w-[340px] max-[998.98px]:text-[14px] max-[767.98px]:w-[330px] max-[767.98px]:h-[110px]"
                 id="aboutus-content"
               >
                 Dekal, một doanh nghiệp hàng đầu trong ngành dán decal, cam kết
@@ -364,17 +368,17 @@
         </section>
         <!-- About Decal -->
         <section
-          class="w-full flex flex-col justify-center about-decal pt-[90px] pb-[70px] max-[998.98px]:pt-[70px] max-[998.98px]:pb-[50px] max-[767.98px]:pt-[0px]"
+          class="w-full flex flex-col justify-center about-decal pt-[90px] pb-[70px] max-[998.98px]:pt-[70px] max-[998.98px]:pb-[50px]  max-[767.98px]:pt-[50px]"
         >
           <!-- 1 -->
           <div
-            class="justify-center row-1 flex items-center gap-[20px] max-[767.98px]:flex-col"
+            class="justify-center row-1 flex items-center gap-[20px] max-[767.98px]:flex-col" data-aos="fade-left"
           >
             <div class="w-[386.67px] h-[386.67px] max-[998.98px]:hidden"></div>
             <div class="flip max-[767.98px]:order-2 relative">
               <img
                 src="./assets/img/about-1.png"
-                class="flip-1 absolute max-[998.98px]:block max-[998.98px]:w-[100%] max-[998.98px]:h-[290px] max-[998.98px]:object-cover max-[767.98px]:h-[290px] max-[767.98px]:w-[290px]"
+                class="flip-1 absolute max-[998.98px]:block max-[998.98px]:w-[100%] max-[998.98px]:h-[290px]  max-[998.98px]:object-cover max-[767.98px]:h-[290px] max-[767.98px]:w-[290px]"
                 alt=""
               />
               <img
@@ -428,7 +432,7 @@
           </div>
           <!-- 2 -->
           <div
-            class="justify-center row-2 flex items-center gap-[20px] py-[20px] max-[767.98px]:flex-col"
+            class="justify-center row-2 flex items-center gap-[20px] py-[20px] max-[767.98px]:flex-col" data-aos="fade-right"
           >
             <div
               class="w-[386.67px] h-[386.67px] order-3 max-[998.98px]:hidden"
@@ -490,7 +494,7 @@
           </div>
           <!-- 3 -->
           <div
-            class="justify-center row-3 flex items-center gap-[20px] max-[767.98px]:flex-col"
+            class="justify-center row-3 flex items-center gap-[20px] max-[767.98px]:flex-col" data-aos="fade-left"
           >
             <div class="w-[386.67px] h-[386.67px] max-[998.98px]:hidden"></div>
             <div class="flip relative max-[767.98px]:order-2">
@@ -695,12 +699,12 @@
             <h2
               class="text-zinc-800 text-4xl font-bold max-[998.98px]:text-[32px] max-[767.98px]:text-[24px]"
             >
-              Decal Custom
+              Decal Carbon
             </h2>
             <p
               class="w-[460px] text-[#71717A] text-base font-normal pt-[16px] pb-[32px] max-[998.98px]:pb-[0px] max-[767.98px]:w-[300px]"
             >
-              Với Dekal Custom, chủ xe có thể tạo ra những mẫu dekal độc đáo, từ
+              Với Dekal Carbon, chủ xe có thể tạo ra những mẫu dekal độc đáo, từ
               logo, hình ảnh, đến hoa văn và kỹ thuật in ấn tiên tiến. Sự linh
               hoạt trong thiết kế cho phép khách hàng thể hiện phong cách và cá
               nhân hóa xe của mình theo ý muốn. Bằng cách sử dụng công nghệ và
@@ -1107,6 +1111,49 @@
           </div>
         </div>
       </div>
+      <!-- Sản phẩm hoàn thiện -->
+      <div class="mt-[90px]">
+        <div class="row-info text-center">
+          <h2
+            class="text-center text-black text-[42px] font-bold max-[998.98px]:text-[30px] max-[767.98px]:text-[24px]"
+          >
+            Sản Phẩm hoàn thiện
+          </h2>
+          <p
+            class="mt-[12px] text-center text-zinc-500 text-xl font-normal max-[998.98px]:text-[18px] max-[767.98px]:text-[16px]"
+          >
+            Thư viện ảnh của doanh nghiệp DeKal
+          </p>
+        </div>
+        <section class="pt-[90px] pb-[20px] px-[120px] mx-auto flex gap-3  max-[998.98px]:pt-[50px] max-[998.98px]:gap-5 max-[767.98px]:flex-col max-[767.98px]:pt-[0px]" id="about">
+          <video class="w-[45%] rounded" autoplay muted loop src="https://cdn.shopify.com/videos/c/vp/cc1bb138b3f348e7b29ef8f3da333f94/cc1bb138b3f348e7b29ef8f3da333f94.HD-1080p-7.2Mbps-23262791.mp4"></video>
+           <div class="pl-[57px] max-[998.98px]:pl-[0px] max-[998.98px]:w-full">
+             <div class="pb-8 max-[767.98px]:w-full">
+               
+               <div
+                 class="my-3 text-stone-900 text-[35px] font-semibold font-['Inter'] capitalize max-[998.98px]:text-[24px]"
+               >
+                  Đam mê
+               </div>
+               <div
+                 class="w-[592px] text-slate-500 text-base font-medium font-['Inter'] leading-normal max-[998.98px]:text-[14px] max-[998.98px]:w-[320px]"
+               >
+               Dekal tự hào là điểm đến hàng đầu cho các giải pháp dán decal xe
+               hơi, Dekal tự hào là điểm đến hàng đầu cho các giải pháp dán decal xe
+               hơiDekal tự hào là điểm đến hàng đầu cho các giải pháp dán decal xe
+               hơi
+               </div>
+          
+             </div>
+             <hr />
+             <div>
+                <img src="./assets/img/image 10.png" class="rounded-[10px]" alt="">
+             </div>
+             
+           </div>
+         </section>
+      </div>
+     
       <!-- question -->
       <div
         class="bg-[#f4f4f5] question mt-[120px] py-[80px] max-[998.98px]:mt-[60px] max-[998.98px]:py-[40px] max-[767.98px]:mt-[30px] max-[767.98px]:py-[20px]" id="faq"
@@ -1254,23 +1301,46 @@
         </div>
       </div>
       <!-- car company -->
-      <div
-        class="pt-[40px] pb-[140px] bg-[#f4f4f5] max-[998.98px]:pt-[30px] max-[998.98px]:pb-[70px] max-[767.98px]:pb-[50px]"
-      >
-        <div
-          class="flex items-cemter justify-between gap-[26px] max-[998.98px]:flex-wrap max-[998.98px]:gap-[30px] max-[998.98px]:justify-center max-[767.98px]:gap-[30px] max-[767.98px]:px-[20px]"
-        >
-          <img src="./assets/img/Hyundai.png" alt="" />
-          <img src="./assets/img/Honda.png" alt="" />
-          <img src="./assets/img/Jaguar.png" alt="" />
-          <img src="./assets/img/Lamborghini.png" alt="" />
-          <img src="./assets/img/Mazda.png" alt="" />
-          <img src="./assets/img/Mitsubishi.png" alt="" />
-          <img src="./assets/img/BMW.png" alt="" />
-          <img src="./assets/img/Mercedes Benz.png" alt="" />
-          <img src="./assets/img/Nissan.png" alt="" />
-        </div>
+
+    <div class="logos pt-[20px] pb-[100px] max-[998.98px]:pb-[70px] max-[767.98px]:pb-[30px]">
+      <div class="logos-slide">
+        <img src="./assets/img/Hyundai.png" alt="" />
+        <img src="./assets/img/Honda.png" alt="" />
+        <img src="./assets/img/Jaguar.png" alt="" />
+        <img src="./assets/img/Lamborghini.png" alt="" />
+        <img src="./assets/img/Mazda.png" alt="" />
+        <img src="./assets/img/Mitsubishi.png" alt="" />
+        <img src="./assets/img/BMW.png" alt="" />
+        <img src="./assets/img/Mercedes Benz.png" alt="" />
+        <img src="./assets/img/Nissan.png" alt="" />
+        <img src="./assets/img/Bugatti.png" alt="" />
+        <img src="./assets/img/Peugeot.png" alt="">
+        <img src="./assets/img/Porsche.png" alt="">
+        <img src="./assets/img/Alfa Romeo.png" alt="">
+        <img src="./assets/img/Iran Khodro.png" alt="">
+        <img src="./assets/img/Citroen.png" alt="">
+        <img src="./assets/img/Ferrari.png" alt="">
+        <img src="./assets/img/GT-R.png" alt="">
+        <img src="./assets/img/Hyundai.png" alt="" />
+        <img src="./assets/img/Honda.png" alt="" />
+        <img src="./assets/img/Jaguar.png" alt="" />
+        <img src="./assets/img/Lamborghini.png" alt="" />
+        <img src="./assets/img/Mazda.png" alt="" />
+        <img src="./assets/img/Mitsubishi.png" alt="" />
+        <img src="./assets/img/BMW.png" alt="" />
+        <img src="./assets/img/Mercedes Benz.png" alt="" />
+        <img src="./assets/img/Nissan.png" alt="" />
+        <img src="./assets/img/Bugatti.png" alt="" />
+        <img src="./assets/img/Peugeot.png" alt="">
+        <img src="./assets/img/Porsche.png" alt="">
+        <img src="./assets/img/Alfa Romeo.png" alt="">
+        <img src="./assets/img/Iran Khodro.png" alt="">
+        <img src="./assets/img/Citroen.png" alt="">
+        <img src="./assets/img/Ferrari.png" alt="">
+        <img src="./assets/img/GT-R.png" alt="">
       </div>
+  </div>
+      
       <!-- Footer -->
       <footer
         class="bg-white px-[116px] mx-auto max-[998.98px]:px-[50px] max-[767.98px]:px-[20px]" id="contact"
@@ -1280,7 +1350,7 @@
           class="footer-top pt-[32px] pb-[21px] flex justify-between border-b border-b-[#D4D4D8] max-[767.98px]:w-full max-[767.98px]:flex-col max-[767.98px]:gap-[10px]"
         >
           <img
-            src="./assets/img/Decal 1.jpg"
+            src="./assets/img/Decal -1.jpg"
             class="max-[767.98px]:block max-[767.98px]:w-[40%]"
             alt=""
           />
@@ -1302,7 +1372,7 @@
         </div>
         <!-- footer bottom -->
         <div
-          class="pt-[32px] pl-[8px] pb-[148px] max-[998.98px]:pb-[50px] max-[767.98px]:pb-[30px]"
+          class="pt-[32px] pl-[8px] pb-[100px] max-[998.98px]:pb-[50px] max-[767.98px]:pb-[40px]"
         >
           <!-- icon social -->
           <div class="flex items-center gap-[16px]">
@@ -1314,16 +1384,9 @@
             <a href="#!"><img src="./assets/icon/ins.svg" alt="" /></a>
             <a href="#!"><img src="./assets/icon/wifi.svg" alt="" /></a>
           </div>
-          <div class="mt-[32px] text-slate-800 text-base font-bold">
-            Liên hệ chúng tôi
-          </div>
-          <!-- App -->
-          <div class="flex gap-[40px] mt-[16px] max-[767.98px]:gap-[20px]">
-            <a href="#!"> <img src="./assets/img/app-store.svg" alt="" /></a>
-            <a href="#!"> <img src="./assets/img/googleplay.svg" alt="" /></a>
-          </div>
+        
           <!-- list nav -->
-          <nav class="mt-[32px]">
+          <nav class="mt-[24px] max-[998.98px]:mt-[18px]">
             <ul
               class="text-slate-800 text-xs font-normal flex gap-[26px] max-[767.98px]:flex-wrap max-[767.98px]:gap-[20px] max-[767.98px]:font-medium"
             >
@@ -1338,7 +1401,7 @@
           </nav>
           <!-- no copyright -->
           <div
-            class="mt-[44px] text-slate-800 text-xs font-normal max-[767.98px]:mt-[34px]"
+            class="mt-[34px] text-slate-800 text-xs font-normal max-[998.98px]:mt-[24px] max-[767.98px]:mt-[18px]"
           >
             © DEKAL.com, Inc., một công ty con hoàn toàn thuộc sở hữu của
             SevenTeam, Inc. Bằng cách sử dụng dekal.com, bạn đồng ý cho việc
@@ -1352,6 +1415,7 @@
     </div>
   </body>
   <script>
+      AOS.init();
     const aboutUsContent = {
       company:
         "Dekal, một doanh nghiệp hàng đầu trong ngành dán decal, cam kết mang đến sự độc đáo và bền bỉ cho mọi sản phẩm. Chúng tôi tự hào về khả năng biến ý tưởng của khách hàng thành hiện thực, với sự sáng tạo và chất lượng làm nền tảng.",
@@ -1404,5 +1468,11 @@ $("#btn-back-to-top").on('click', function(e) {
   e.preventDefault();
   $('html, body').animate({scrollTop:0}, '300');
 });
+$(document).ready(function() {
+      $('#logo').click(function() {
+          $('html, body').animate({scrollTop: 0}, 'slow');
+      });
+  });
+  
   </script>
 </html>

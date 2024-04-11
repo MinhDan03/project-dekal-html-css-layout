@@ -134,3 +134,30 @@ td:last-child {
 .menu-checkbox:checked ~ .menu-drawer {
     transform: translateX(0);
 } */
+/* animation */
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+.logos{
+    overflow: hidden;
+    white-space: nowrap;
+}
+.logos-slide:hover{
+    animation-play-state: paused;
+}
+.logos-slide{
+    display: inline-flex;
+    animation: 20s slide infinite linear;
+    
+}
+.logos-slide img{
+    height: 100%;
+    object-fit: cover;
+    margin: 0 40px;
+}
